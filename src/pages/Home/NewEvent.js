@@ -30,9 +30,9 @@ const NewEvent = () => {
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                    <img src="https://www.knoebels.com/data/uploads/media/image/Copy-of-Copy-of-Trivia.png?w=400" class="card-img-top" alt="..."/>
+                    <img src="https://magazine.columbia.edu/sites/default/files/styles/full_width_card/public/2018-09/Expl_DeadSea.jpg?itok=Gxyvmojw?w=400" class="card-img-top" alt="..."/>
                     <div class="card-body">
-                        <h5 class="card-title">Trivia Night</h5>
+                        <h5 class="card-title">Dead Sea </h5>
                         <h6 className="text-muted">Oct 5, 2021</h6>
                         <p class="card-text">Grab your friends and join us for Trivia Night!</p>
                     </div>
