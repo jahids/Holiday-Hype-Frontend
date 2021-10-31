@@ -59,7 +59,7 @@ const PlaceOrder = () => {
 <div className="col-md-6"></div>
 </div>
 </section>
-//         </div>
+    </div>
 
     );
 };
