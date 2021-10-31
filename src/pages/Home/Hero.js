@@ -14,7 +14,7 @@ const Hero = () => {
 
     useEffect(()=> {
         
-        fetch('http://localhost:5000/services')
+        fetch('https://wicked-coffin-72841.herokuapp.com/services')
         .then(res => res.json())
         .then(data => setproduct(data))
 

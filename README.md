@@ -1,4 +1,4 @@
-# Candler Hospital
+# Holiday Hype
 
 This is the live website link(https://candler-hospital.web.app/)
 

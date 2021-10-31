@@ -19,7 +19,7 @@ const MyOrder = () => {
     
     useEffect(() => {
 
-        axios.post("http://localhost:5000/services/xyz",
+        axios.post("https://wicked-coffin-72841.herokuapp.com/services/xyz",
         {key: email})
             .then(res => setServices(res.data));
     } ,[]);

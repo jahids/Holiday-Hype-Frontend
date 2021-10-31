@@ -1,103 +1,3 @@
-// import axios from 'axios';
-// import React, { useEffect, useState } from 'react';
-// import { Col, Container, Navbar, Row } from 'react-bootstrap';
-// import { useParams } from 'react-router';
-// import { useForm } from "react-hook-form";
-// import useAuth from '../Hooks/useAuth';
-// import { Link } from 'react-router-dom';
-
-// const Detiles = () => {
-    
-//     const {id} = useParams();
-//     const [dtl,setdtl] = useState({});
-//     const {user, setIsLoading} = useAuth();
-
-//     useEffect(()=>{
-        
-//         fetch(`http://localhost:5000/services/jahid/${id}`)
-//         .then(res => res.json())
-//         .then(data => console.log(dtl))
-      
-
- 
-//     },[])
-
-
-
-
-
-
-
-    //  form data
-    //  const { register,  reset, handleSubmit, watch, formState: { errors } } = useForm();
-    //  const onSubmit = (data, e) => {
-    //      console.log(data);
-    //      fetch('http://localhost:5000/services/order',{
-    //          method : 'POST',
-    //          headers : {
-    //              'content-type': 'application.json'
-    //          },
-    //          body:JSON.stringify(data)
-    //      })
-    //      .then(res => res.json())
-    //      .then(data => {
-    //         if(data.acknowledged){
-    //             alert("great", "you added a new service");
-    //             e.target.reset();
-    //         }
-    //      })
-    
-    //  };
-
-
-   
-    
-
-
-    
-
-//     return (
-        
-//         <div class="container p-5">
-//         <h2>this is id {id}</h2>
-//             <Navbar/>
-//             <Container className="p-5">
-//                 <Row className="d-flex align-items-center">
-//                     <Col lg={6} md={6} xs={12}>
-//                         <img className="rounded mw-100 w-100" src={dtl.img} alt="" />
-
-
-
-//                   </Col>
-//                     <Col lg={6} md={6} xs={12}>
-//                         <h1>{dtl.Name}</h1>
-//                         <h4>{dtl.description}</h4>
-                         
-//                         <p>{dtl.price}</p>
-//                         <Link to="/order">
-//                         <div className="btn btn-primary">Place Order</div>
-//                         </Link>
-//                     </Col>
-//                 </Row>
-//             </Container>  
-
-//          </div>
-
-       
-        
-
-    
-
-      
-
-
-//     );
-// };
-
-// export default Detiles;
-
-
-
 
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
@@ -116,7 +16,7 @@ const Detiles = () => {
     // setIsLoading(true)
 
     useEffect( () => {
-       fetch(`http://localhost:5000/services/jahid/${id}`)
+       fetch(`https://wicked-coffin-72841.herokuapp.com/services/jahid/${id}`)
         .then(res => res.json())
         .then(data => {
             setServiceDetails(data)
@@ -129,7 +29,7 @@ const Detiles = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data => {
         console.log(data);
-        axios.post('http://localhost:5000/services/order', data)
+        axios.post('https://wicked-coffin-72841.herokuapp.com/services/order', data)
         .then(res => {
             if(res.data.insertedId){
                 alert("data insert successfully");
