@@ -29,7 +29,7 @@ const MyOrder = () => {
         const confirmation = window.confirm('Are you sure you want to delete this order');
 
         if(confirmation){
-            axios.get(`http://localhost:5000/order/deleteOrder/${id}`)
+            axios.get(`https://wicked-coffin-72841.herokuapp.com/order/deleteOrder/${id}`)
                 .then(res => {
                     if(res.data.deletedCount > 0){
                         const resData = services.filter(sServices => sServices._id !== id);
