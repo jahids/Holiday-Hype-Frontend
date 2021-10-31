@@ -22,7 +22,7 @@ This is the live website link(https://assignment-11-396da.web.app)
 - bootstrap & react-bootstrap
 
 ## Project Description
-- provide a digital service.
+- provide a digital traveling service.
 - this is a Traveler website.anyone can take any sevice from this site.
 - every viewable all places and our all service providing website.
 - There has some private route where you can't enter without login
